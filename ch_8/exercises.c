@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include<stdlib.h>
 
 void function_1();
 void function_2();
@@ -29,8 +30,8 @@ int main(){
 //    function_4_2();
 //    function_5();
 //    function_6();
-    function_7();
-//    function_8();
+//    function_7();
+    function_8();
 //    function_9();
 //    function_10();
 
@@ -237,4 +238,17 @@ bool bad_limits(long begin, long end, long low, long high)
         not_good = true;
     }
     return not_good;
+}
+
+void function_8()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for (int j=i;j<n;j++)
+        {
+            printf("%d*%d=%d\t",i ,j, i * j);
+        }
+        printf("%d*%d=%d\n",i,n,i*n);
+    }
 }
